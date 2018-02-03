@@ -1,0 +1,670 @@
+/*
+`style.css` contains all classes, style and id definitions used in the Basic-Portfolio project.
+There are 3 main pages. Content is cascading and genrally organized as follows:
+*Globally shared
+*`index.html` styles
+*`portfolio.html` styles
+*`contact.html` styles
+*/
+
+
+/* Global styles*/
+
+body {
+    background-image: url("../../assets/images/cardboard_flat.png");
+    background-repeat: repeat;
+    width: 100%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    font-size: 18px;
+    line-height: 150%;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-bottom-width: 2px;
+    z-index: 100;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    padding: 20px;
+}
+
+header>h1 {
+    font-size: 32px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    float: left;
+}
+
+h2 {
+    font-size: 28px;
+    color: #4aaaa5;
+}
+
+h3 {
+    font-size: 22px;
+    color: #4aaaa5;
+}
+
+h4 {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0px;
+    background-color: #4aaaa5;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 70px;
+    left: 100px;
+    text-align: right;
+    width: 960px;
+    float: right;
+    font-size: 20px;
+}
+
+a {
+    color: #777777;
+    text-decoration-line: none;
+}
+
+h1 a {
+    color: #ffffff;
+}
+
+section {
+    clear: both;
+    background-color: #ffffff;
+    border-color: #666666;
+    border-width: 1px;
+}
+
+.container {
+    width: 960px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    margin-left: 100px;
+    /* overflow: auto; */
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* About Me box and content */
+
+#aboutBox {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 590px;
+    padding: 40px;
+    overflow: auto;
+}
+
+.float-pic-left {
+    margin-top: 0px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+/* Connect with Me side bar and links */
+
+#connectBox {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 230px;
+    height: 150px;
+    text-align: center;
+    line-height: 100%;
+    padding: 20px;
+}
+
+#link-icons {
+    width: 230px;
+    margin-top: 15px;
+    position: absolute;
+    top: 90px;
+    text-align: center;
+}
+
+#left-icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-left: 0px;
+}
+
+#middle-icon {
+    position: absolute;
+    top: 0px;
+    left: 81px;
+}
+
+#right-icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-right: 0px;
+}
+
+
+/*Portfolio  box and links*/
+
+#portfolioBox {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 590px;
+    height: 1000px;
+    padding: 30px;
+}
+
+.projectBox {
+    width: 260px;
+    height: 200px;
+}
+
+.projectPic {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 260px;
+}
+
+.projectLabel {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 260px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#project1 {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    margin: 25px;
+}
+
+#project2 {
+    position: absolute;
+    top: 110px;
+    left: 320px;
+    margin: 25px;
+}
+
+#project3 {
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    margin: 25px;
+}
+
+#project4 {
+    position: absolute;
+    top: 350px;
+    left: 320px;
+    margin: 25px;
+}
+
+#project5 {
+    position: absolute;
+    top: 595px;
+    left: 20px;
+    margin: 25px;
+}
+
+
+/*Contact Me box and form input*/
+
+#contactBox {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 590px;
+    height: 500px;
+    padding: 30px;
+}
+
+#contactForm {
+    width: 550px;
+    height: 300px;
+}
+
+#contactSubmit {
+    margin-top: 5px;
+    background-color: #4aaaa5;
+    color: white;
+    width: 100px;
+    height: 38px;
+    font-size: 18px;
+}
+
+.formLabel {
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+#name {
+    width: 575px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#email {
+    width: 575px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#message {
+    width: 565px;
+    height: 150px;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #333333;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+/*global footer*/
+
+footer {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #666666;
+    padding: 30px;
+    color: #ffffff;
+    border-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 10px;
+    z-index: 10;
+}
+
+@media screen and (max-width:980px) {
+    /* About Me box and content */
+    #aboutBox {
+        width: 380px;
+        margin-bottom: 150px;
+    }
+    #aboutMePic {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .float-pic-left {
+        margin-right: 0px;
+    }
+    /* Connect with Me side bar and links */
+    #connectBox {
+        position: relative;
+        margin-left: 490px;
+    }
+    nav {
+        width: 760px;
+    }
+    /* Portfolio */
+    #portfolioBox {
+        width: 380px;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        height: 1900px;
+        padding: 40px;
+    }
+    .projectBox {
+        width: "100%";
+        height: 293px;
+    }
+    .projectLabel {
+        top: 220px;
+        left: 0px;
+        width: 380px;
+    }
+    .projectPic {
+        width: 380px;
+        padding: 0px;
+    }
+    #project1,
+    #project2,
+    #project3,
+    #project4,
+    #project5 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        margin-top: 40px;
+    }
+    /* Portfolio */
+    #contactBox {
+        width: 380px;
+        height: 570px;
+    }
+    #contactForm {
+        width: 320px;
+        height: 700px;
+    }
+    #name,
+    #email,
+    #message {
+        width: 365px;
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+    #message {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        padding: 0px;
+    }
+    .container {
+        width: 728px;
+        height: 1100px;
+        margin: 20px;
+    }
+    h1 {
+        margin-left: 20px;
+    }
+    h3 {
+        padding-left: 0px;
+    }
+    /* About Me box and content */
+    #aboutBox {
+        position: unset;
+        margin-top: 50px;
+        width: 648px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    #aboutMePic {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .float-pic-left {
+        margin-right: 0px;
+    }
+    /* Connect with Me side bar and links */
+    #connectBox {
+        width: 648px;
+        height: 150px;
+        position: unset;
+        float: left;
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 150px;
+        text-align: left;
+        padding: 40px;
+    }
+    #link-icons {
+        margin-left: 0px;
+        position: unset;
+        width: 608px;
+    }
+    #left-icon,
+    #middle-icon,
+    #right-icon {
+        position: unset;
+        float: left;
+        margin: 0px 10px 20px 0px;
+    }
+    nav {
+        width: 628px;
+    }
+    /* Portfolio */
+    #portfolioBox {
+        width: 648px;
+        position: unset;
+        float: left;
+        left: 0px;
+        top: 50px;
+        height: 870px;
+        padding: 40px;
+    }
+    .projectBox {
+        float: left;
+        width: 47%;
+        height: 250px;
+    }
+    .projectLabel {
+        top: 135px;
+        left: 0px;
+        width: 100%;
+    }
+    .projectPic {
+        position: unset;
+        width: 100%;
+        padding: 0px;
+        top: unset;
+        left: unset;
+    }
+    #project1,
+    #project2,
+    #project3,
+    #project4,
+    #project5 {
+        position: relative;
+        top: unset;
+        left: unset;
+        margin-left: 10px;
+        margin-right: 9px;
+        margin-top: 10px;
+    }
+    /* Portfolio */
+    #contactBox {
+        clear: both;
+        position: unset;
+        float: left;
+        width: 668px;
+        height: 570px;
+    }
+    #contactForm {
+        width: 100%;
+        height: 570px;
+    }
+    #name,
+    #email,
+    #message {
+        width: 622px;
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+    #message {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    header {
+        width: 580px;
+        text-align: center;
+    }
+    nav {
+        position:unset;
+        top:unset;
+        left:unset;
+        background-color: white;
+        width: 640px;
+        padding-top:10px;
+        padding-bottom: 10px;
+        float: left;
+        text-align: center;
+    }
+    .container {
+        clear: both;
+        width: 600px;
+        height: 1100px;
+        margin: 20px;
+    }
+    header>h1 {
+        margin: 0px;
+        padding: 30px;
+        width: 100%;
+    }
+    
+    h2,
+    h3 {
+        padding-left: 0px;
+    }
+    h3 {
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    /* About Me box and content */
+    #aboutBox {
+        position: unset;
+        margin-top: 55px;
+        width: 520px;
+        float: left;
+        margin-bottom: 20px;
+    }
+    #aboutMePic {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    .float-pic-left {
+        margin-right: 0px;
+    }
+    /* Connect with Me side bar and links */
+    #connectBox {
+        width: 560px;
+        height: 150px;
+        position: unset;
+        float: left;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 150px;
+        text-align: left;
+        padding: 20px;
+    }
+    #link-icons {
+        margin-left: 0px;
+        position: unset;
+        width: 540px;
+    }
+    #left-icon,
+    #middle-icon,
+    #right-icon {
+        position: unset;
+        float: left;
+        margin: 0px 10px 20px 0px;
+    }
+    /* Portfolio */
+    #portfolioBox {
+        width: 550px;
+        position: unset;
+        float: left;
+        left: 0px;
+        top: 60px;
+        height: auto;
+        padding: 25px;
+        margin-top:55px;
+    }
+    .projectBox {
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .projectLabel {
+        top: 335px;
+        left: 0px;
+        width: 100%;
+    }
+    .projectPic {
+        position: unset;
+        width: 100%;
+        padding: 0px;
+        top: unset;
+        left: unset;
+    }
+    #project1,
+    #project2,
+    #project3,
+    #project4,
+    #project5 {
+        position: relative;
+        top: unset;
+        left: unset;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    /* Contact */
+    #contactBox {
+        clear: both;
+        position: unset;
+        float: left;
+        width: 540px;
+        height: 600px;
+        margin-top: 55px;
+    }
+    #contactForm {
+        width: 100%;
+        height: 540px;
+    }
+    #name,
+    #email,
+    #message {
+        width: 520px;
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+    #message {
+        height: 300px;
+    }
+}
