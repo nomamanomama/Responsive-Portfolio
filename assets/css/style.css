@@ -22,6 +22,15 @@ body {
     border-color: #dddddd;
 }
 
+@keyframes changeH1Color {
+    from {
+        background-color: #4aaaa5;
+    }
+    to {
+        background-color: #8a0b79
+    }
+}
+
 header {
     position: fixed;
     top: 0;
@@ -51,6 +60,9 @@ header>h1 {
     color: #ffffff;
     padding: 40px;
     text-align: center;
+    animation-name: changeH1Color;
+    animation-duration: 4s;
+    animation-direction: alternate;
     float: left;
 }
 
@@ -336,8 +348,8 @@ footer {
 @media screen and (max-width:980px) {
     /* About Me box and content */
     .container {
-            width: 780px;
-            height: 900px;
+        width: 780px;
+        height: 900px;
     }
     #aboutBox {
         width: 380px;
@@ -431,7 +443,7 @@ footer {
     #aboutBox {
         position: unset;
         margin-top: 50px;
-        width: 648px;
+        width: 634px;
         float: left;
         margin-bottom: 10px;
     }
@@ -479,7 +491,7 @@ footer {
         top: 50px;
         height: 870px;
         padding: 40px;
-        margin-top:20px;
+        margin-top: 20px;
     }
     .projectBox {
         float: left;
